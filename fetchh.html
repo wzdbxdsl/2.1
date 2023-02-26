@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .box1{
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        input[type=text], select {
+            position: relative;
+           width: 50%;
+           padding: 12px 20px;
+           margin: 8px 0;
+           display: inline-block;
+           border: 1px solid #ccc;
+           border-radius: 4px;
+           box-sizing: border-box;
+        }
+        input[type=submit] {
+
+           background-color: #4CAF50;
+           color: white;
+           padding: 14px 20px;
+           margin: 8px 0;
+           border: none;
+           border-radius: 4px;
+           cursor: pointer;
+        }
+        input[type=submit]:hover {
+           background-color: #45a049;
+        }
+        .box2{
+            margin-top: 20px;
+            border-radius: 5px;
+            background-color:#f2f2f2;
+            height: 100%;
+        }
+        .box2 ul
+        {
+            position: relative;
+            top:50px;
+            margin-top: 20px;
+        }
+        .last
+        {height: 100%;
+        position: relative;
+    margin-top: 20px;}
+        .box2 input{
+            position: relative;
+            left: 20px;
+           bottom: 0px;
+           margin: 5px;
+
+        }
+        .box3{
+            width: 100%;
+            position:absolute;
+            top:200px;
+
+        }
+        ul{
+            list-style-type:none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        昵称:  <input type="text" class="register" >
+        <input type="submit" value="注册" id="log" onclick="add()"><br>
+        昵称:  <input type="text" class="login" >
+        <input type="submit" value="登录" id="log1" onclick="login()">
+
+    </div>
+    <div class="box2">
+        <div class="last">
+            <ul class="myUL">
+                <li></li>
+                <li class="colletion">留言</li> 
+            </ul>
+        </div>
+        <div class="box3">
+        <form class="sub">
+        <input type="text" class="put" >
+        <input type="submit" value="发送">
+        </form>
+        </div>
+    </div>
+    
+</body>
+<script src="./注册.js"></script>
+
+
+</html>
